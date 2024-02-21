@@ -19,9 +19,11 @@ public class dpsvarmod {
     public dpsvarmod() {
         EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(Type.COMMON, Config.SPEC);
+
+        ModCreativeModeTabs.register(MOD_EVENT_BUS);
+        ModItems.ITEMS.register(MOD_EVENT_BUS);
         ModItems.BOWS.register(MOD_EVENT_BUS);
         ModItems.CROSSBOWS.register(MOD_EVENT_BUS);
-        ModItems.ITEMS.register(MOD_EVENT_BUS);
     }
 
     static {

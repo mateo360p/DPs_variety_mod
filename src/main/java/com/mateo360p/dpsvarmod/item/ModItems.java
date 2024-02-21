@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
 // Items
     public static final DeferredRegister<Item> ITEMS;
+    public static final RegistryObject<Item> DP_TAB_ITEM;
     public static final RegistryObject<Item> DENDERITE_SCRAP;
     public static final RegistryObject<Item> DENDERITE_INGOT;
 // Bows
@@ -28,6 +29,9 @@ public class ModItems {
     static {
         //ITEMS
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "dpsvarmod");
+        DP_TAB_ITEM = ITEMS.register("dps_tab_item", () -> {
+            return new Item(new Item.Properties().fireResistant().stacksTo(1));
+        });
         DENDERITE_SCRAP = ITEMS.register("denderite_scrap", () -> {
             return new Item(new Item.Properties().fireResistant().stacksTo(64));
         });
