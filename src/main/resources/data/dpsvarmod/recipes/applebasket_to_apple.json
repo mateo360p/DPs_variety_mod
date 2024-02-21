@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dpsvarmod:apple_basket"
+    }
+  ],
+  "result": {
+    "item": "minecraft:apple",
+    "count": 9
+  }
+}

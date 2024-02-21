@@ -36,19 +36,6 @@ public class ModClient {
         });
     }
 
-    @SubscribeEvent
-    public static void buildCreativeModeTabContents(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            ModItems.BOWS.getEntries().forEach((bow) -> {
-                event.accept((ItemLike)bow.get());
-            });
-            ModItems.CROSSBOWS.getEntries().forEach((crossbow) -> {
-                event.accept((ItemLike)crossbow.get());
-            });
-        }
-
-    }
-
     private static void registerBowResourceLocations(RegistryObject<Item> item) {
         ItemProperties.register((Item)item.get(), new ResourceLocation("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
             if (p_174637_ == null) {

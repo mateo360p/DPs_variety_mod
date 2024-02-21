@@ -1,0 +1,18 @@
+{
+  "type": "crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "dpsvarmod:denderite_ingot"
+    }
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_block",
+    "count": 1
+  }
+}

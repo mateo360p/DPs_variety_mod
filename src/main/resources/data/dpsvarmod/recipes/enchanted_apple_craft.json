@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "geg",
+    "gag",
+    "ggg"
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:gold_block"
+    },
+    "e": {
+      "item": "minecraft:experience_bottle"
+    },
+    "a": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "minecraft:enchanted_golden_apple",
+    "count": 1
+  }
+}

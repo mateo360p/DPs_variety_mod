@@ -21,6 +21,9 @@ public class ModCreativeModeTabs {
                         //BLOCKS
                         output.accept(ModBlocks.CARROT_BASKET.get());
                         output.accept(ModBlocks.POTATO_BASKET.get());
+                        output.accept(ModBlocks.APPLE_BASKET.get());
+                        output.accept(ModBlocks.BEETROOT_BASKET.get());
+                        output.accept(ModBlocks.DENDERITE_BLOCK.get());
                         //ITEMS
                         output.accept(ModItems.DENDERITE_SCRAP.get());
                         output.accept(ModItems.DENDERITE_INGOT.get());

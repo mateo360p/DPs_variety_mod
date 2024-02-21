@@ -3,6 +3,9 @@
 
 	"block.dpsvarmod.carrot_basket": "Carrot Basket",
 	"block.dpsvarmod.potato_basket": "Potato Basket",
+	"block.dpsvarmod.apple_basket": "Apple Basket",
+	"block.dpsvarmod.beetroot_basket": "Beetroot Basket",
+	"block.dpsvarmod.denderite_block": "Denderite Block",
 
 	"item.dpsvarmod.dps_tab_item":  "DP",
 	"item.dpsvarmod.denderite_scrap": "Denderite_Scrap",
