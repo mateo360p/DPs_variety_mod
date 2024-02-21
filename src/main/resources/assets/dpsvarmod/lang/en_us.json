@@ -1,0 +1,12 @@
+{
+	"item.dpsvarmod.denderite_scrap": "Denderite_Scrap",
+	"item.dpsvarmod.denderite_ingot": "Denderite Ingot",
+
+	"item.dpsvarmod.diamond_bow": "Diamond Bow",
+	"item.dpsvarmod.netherite_bow": "Netherite Bow",
+	"item.dpsvarmod.denderite_bow": "Denderite Bow",
+	"item.dpsvarmod.damage_tooltip": "Projectile Damage",
+
+	"item.dpsvarmod.diamond_crossbow": "Diamond Crossbow",
+	"item.dpsvarmod.netherite_crossbow": "Netherite Crossbow"
+}

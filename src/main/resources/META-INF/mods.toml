@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+[[mods]]
+modId="dpsvarmod"
+version="1.20.1-FORGE-1.10"
+displayName="DP's variety mod (Forge)"
+logoFile="icon.png"
+credits="mateo360p; [dpsvarmod:Popcornman200, lucam, Mr.Bananas]"
+authors="DP/ mateo360p"
+description="Some varied things added to minecraft :D"

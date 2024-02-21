@@ -1,0 +1,6 @@
+{
+    "parent": "dpsvarmod:item/diamond_crossbow",
+    "textures": {
+        "layer0": "dpsvarmod:item/diamond_crossbow_pulling_1"
+    }
+}

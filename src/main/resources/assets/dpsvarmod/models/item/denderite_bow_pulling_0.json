@@ -1,0 +1,6 @@
+{
+    "parent": "dpsvarmod:item/denderite_bow",
+    "textures": {
+        "layer0": "dpsvarmod:item/denderite_bow_pulling_0"
+    }
+}

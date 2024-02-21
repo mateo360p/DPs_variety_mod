@@ -1,0 +1,6 @@
+{
+    "parent": "dpsvarmod:item/diamond_bow",
+    "textures": {
+        "layer0": "dpsvarmod:item/diamond_bow_pulling_0"
+    }
+}
