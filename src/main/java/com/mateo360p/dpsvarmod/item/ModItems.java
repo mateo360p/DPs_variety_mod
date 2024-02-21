@@ -2,13 +2,17 @@ package com.mateo360p.dpsvarmod.item;
 
 import com.mateo360p.dpsvarmod.item.custombow.BowTiers;
 import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
+//Blocks are automatically added
+
 // Items
     public static final DeferredRegister<Item> ITEMS;
     public static final RegistryObject<Item> DP_TAB_ITEM;
@@ -24,10 +28,9 @@ public class ModItems {
     public static final DeferredRegister<Item> CROSSBOWS;
     public static final RegistryObject<Item> DIAMOND_CROSSBOW;
     public static final RegistryObject<Item> NETHERITE_CROSSBOW;
-
 //ALL ITEMS
     static {
-        //ITEMS
+        ////ITEMS
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "dpsvarmod");
         DP_TAB_ITEM = ITEMS.register("dps_tab_item", () -> {
             return new Item(new Item.Properties().fireResistant().stacksTo(1));

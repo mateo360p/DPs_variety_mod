@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ede",
+    "cgc",
+    "bkb"
+  ],
+  "key": {
+    "e": {
+      "item": "minecraft:emerald"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:gold_ingot"
+    },
+    "g": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "b": {
+      "item": "minecraft:blaze_rot"
+    },
+    "k": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:totem_of_undying",
+    "count": 1
+  }
+}

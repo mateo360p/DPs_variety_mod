@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod;
 
+import com.mateo360p.dpsvarmod.block.ModBlocks;
 import com.mateo360p.dpsvarmod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -17,6 +18,9 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DP_TAB_ITEM.get()))
                     .title(Component.translatable("creativetab.dps_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //BLOCKS
+                        output.accept(ModBlocks.CARROT_BASKET.get());
+                        output.accept(ModBlocks.POTATO_BASKET.get());
                         //ITEMS
                         output.accept(ModItems.DENDERITE_SCRAP.get());
                         output.accept(ModItems.DENDERITE_INGOT.get());
@@ -27,10 +31,6 @@ public class ModCreativeModeTabs {
                         //CROSSBOWS
                         output.accept(ModItems.DIAMOND_CROSSBOW.get());
                         output.accept(ModItems.NETHERITE_CROSSBOW.get());
-                        //BLOCKS
-                        //output.accept(ModBlocks.CARROT_BASKET.get());
-                        //output.accept(ModBlocks.POTATO_BASKET.get());
-
 
                         //...(ModItems.<NAME>.get())---> get() solo es usado para cosas del mod, no para los vanilla.
                     })

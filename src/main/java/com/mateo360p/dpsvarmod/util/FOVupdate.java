@@ -12,10 +12,11 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 @EventBusSubscriber(
         modid = "dpsvarmod",
         bus = Bus.FORGE,
-        value = {Dist.CLIENT}
+        value = {Dist.CLIENT} 
 )
-public class FOVupdate {
+public class FOVupdate {     
     public FOVupdate() {
+    	
     }
 
     @SubscribeEvent

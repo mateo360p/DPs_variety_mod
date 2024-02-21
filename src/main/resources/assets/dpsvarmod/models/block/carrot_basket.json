@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dpsvarmod:block/food_basket_bottom",
+    "up": "dpsvarmod:block/carrot_basket_top",
+    "north": "dpsvarmod:block/carrot_basket_side",
+    "east": "dpsvarmod:block/carrot_basket_side",
+    "south": "dpsvarmod:block/carrot_basket_side",
+    "west": "dpsvarmod:block/carrot_basket_side",
+    "particle": "dpsvarmod:block/carrot_basket_top"
+  },
+  "render_type": "solid"
+}

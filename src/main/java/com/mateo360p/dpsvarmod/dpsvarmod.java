@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod;
 
+import com.mateo360p.dpsvarmod.block.ModBlocks;
 import com.mateo360p.dpsvarmod.config.Config;
 import com.mateo360p.dpsvarmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,6 +22,8 @@ public class dpsvarmod {
         ModLoadingContext.get().registerConfig(Type.COMMON, Config.SPEC);
 
         ModCreativeModeTabs.register(MOD_EVENT_BUS);
+
+        ModBlocks.BLOCKS.register(MOD_EVENT_BUS);
         ModItems.ITEMS.register(MOD_EVENT_BUS);
         ModItems.BOWS.register(MOD_EVENT_BUS);
         ModItems.CROSSBOWS.register(MOD_EVENT_BUS);
