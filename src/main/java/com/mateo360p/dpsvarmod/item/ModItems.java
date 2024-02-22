@@ -2,6 +2,7 @@ package com.mateo360p.dpsvarmod.item;
 
 import com.mateo360p.dpsvarmod.item.custombow.BowTiers;
 import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
+import com.mateo360p.dpsvarmod.item.customsmithingtemplate.DenderiteSmithingTemplate;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.HorseArmorItem;
@@ -17,6 +18,7 @@ public class ModItems {
 // Items
     public static final DeferredRegister<Item> ITEMS;
     public static final RegistryObject<Item> DP_TAB_ITEM;
+    public static final RegistryObject<Item> DENDERITE_UPGRADE_TEMPLATE;
     public static final RegistryObject<Item> DENDERITE_SCRAP;
     public static final RegistryObject<Item> DENDERITE_INGOT;
 // Items
@@ -42,6 +44,8 @@ public class ModItems {
         DP_TAB_ITEM = ITEMS.register("dps_tab_item", () -> {
             return new Item(new Item.Properties().fireResistant().stacksTo(1));
         });
+        DENDERITE_UPGRADE_TEMPLATE = ITEMS.register("denderite_upgrade_smithing_template",
+            DenderiteSmithingTemplate::createUpgrade);
         DENDERITE_SCRAP = ITEMS.register("denderite_scrap", () -> {
             return new Item(new Item.Properties().fireResistant().stacksTo(64));
         });

@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BEETROOT_BASKET.get());
                         output.accept(ModBlocks.DENDERITE_BLOCK.get());
                         //ITEMS
+                        output.accept(ModItems.DENDERITE_UPGRADE_TEMPLATE.get());
                         output.accept(ModItems.DENDERITE_SCRAP.get());
                         output.accept(ModItems.DENDERITE_INGOT.get());
                         //BOWS

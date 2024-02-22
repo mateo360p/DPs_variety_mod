@@ -10,6 +10,6 @@
     "item": "dpsvarmod:denderite_crossbow"
   },
   "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
+    "item": "dpsvarmod:denderite_upgrade_smithing_template"
   }
 }
