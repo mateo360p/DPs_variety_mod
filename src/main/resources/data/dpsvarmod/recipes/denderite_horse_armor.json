@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "dpsvarmod:denderite_ingot"
+  },
+  "base": {
+    "item": "dpsvarmod:netherite_horse_armor"
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_horse_armor"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

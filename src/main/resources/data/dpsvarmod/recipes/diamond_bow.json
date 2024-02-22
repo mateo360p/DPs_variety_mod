@@ -2,13 +2,13 @@
     "type": "minecraft:crafting_shaped",
     "pattern":
     [
-        " a ",
-        "ab ",
-        " a "
+        " d ",
+        "dbd",
+        " d "
     ],
     "key":
     {
-        "a":
+        "d":
         {
             "item": "minecraft:diamond"
         },

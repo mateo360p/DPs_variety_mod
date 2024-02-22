@@ -31,6 +31,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DIAMOND_BOW.get());
                         output.accept(ModItems.NETHERITE_BOW.get());
                         output.accept(ModItems.DENDERITE_BOW.get());
+                        //HORSE ARMORS
+                        output.accept(ModItems.NETHERITE_HORSE_ARMOR.get());
+                        output.accept(ModItems.DENDERITE_HORSE_ARMOR.get());
                         //CROSSBOWS
                         output.accept(ModItems.DIAMOND_CROSSBOW.get());
                         output.accept(ModItems.NETHERITE_CROSSBOW.get());

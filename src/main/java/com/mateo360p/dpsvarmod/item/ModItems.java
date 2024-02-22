@@ -4,6 +4,7 @@ import com.mateo360p.dpsvarmod.item.custombow.BowTiers;
 import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CrossbowItem;
+import net.minecraft.world.item.HorseArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +19,10 @@ public class ModItems {
     public static final RegistryObject<Item> DP_TAB_ITEM;
     public static final RegistryObject<Item> DENDERITE_SCRAP;
     public static final RegistryObject<Item> DENDERITE_INGOT;
+// Items
+    public static final DeferredRegister<Item> HORSE_ARMORS;
+    public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR;
+    public static final RegistryObject<Item> DENDERITE_HORSE_ARMOR;
 // Bows
     public static final DeferredRegister<Item> BOWS;
     public static final RegistryObject<Item> DIAMOND_BOW;
@@ -32,6 +37,7 @@ public class ModItems {
 //ALL ITEMS
     static {
         ////ITEMS
+
         ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "dpsvarmod");
         DP_TAB_ITEM = ITEMS.register("dps_tab_item", () -> {
             return new Item(new Item.Properties().fireResistant().stacksTo(1));
@@ -41,6 +47,16 @@ public class ModItems {
         });
         DENDERITE_INGOT = ITEMS.register("denderite_ingot", () -> {
             return new Item(new Item.Properties().fireResistant().stacksTo(64));
+        });
+
+
+        //HORSE ARMORS
+        HORSE_ARMORS = DeferredRegister.create(ForgeRegistries.ITEMS, "dpsvarmod");
+        NETHERITE_HORSE_ARMOR = HORSE_ARMORS.register("netherite_horse_armor", () -> {
+            return new HorseArmorItem(17, "netherite",new Item.Properties().fireResistant().stacksTo(1));
+        });
+        DENDERITE_HORSE_ARMOR = HORSE_ARMORS.register("denderite_horse_armor", () -> {
+            return new HorseArmorItem(25, "denderite",new Item.Properties().fireResistant().stacksTo(1));
         });
 
 
