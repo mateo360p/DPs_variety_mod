@@ -28,6 +28,7 @@ public class ModItems {
     public static final DeferredRegister<Item> CROSSBOWS;
     public static final RegistryObject<Item> DIAMOND_CROSSBOW;
     public static final RegistryObject<Item> NETHERITE_CROSSBOW;
+    public static final RegistryObject<Item> DENDERITE_CROSSBOW;
 //ALL ITEMS
     static {
         ////ITEMS
@@ -63,6 +64,9 @@ public class ModItems {
         });
         NETHERITE_CROSSBOW = CROSSBOWS.register("netherite_crossbow", () -> {
             return new CrossbowItem(new Item.Properties().durability(1372).fireResistant());
+        });
+        DENDERITE_CROSSBOW = CROSSBOWS.register("denderite_crossbow", () -> {
+            return new CrossbowItem(new Item.Properties().durability(2390).fireResistant());
         });
     }
 }

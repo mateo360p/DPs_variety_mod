@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sds",
+    "nen",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "dpsvarmod:denderite_scrap"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "n": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "e": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_ingot",
+    "count": 1
+  }
+}

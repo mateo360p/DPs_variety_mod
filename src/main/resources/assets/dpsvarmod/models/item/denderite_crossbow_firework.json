@@ -1,0 +1,6 @@
+{
+    "parent": "dpsvarmod:item/denderite_crossbow",
+    "textures": {
+        "layer0": "dpsvarmod:item/denderite_crossbow_firework"
+    }
+}

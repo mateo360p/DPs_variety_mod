@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         //CROSSBOWS
                         output.accept(ModItems.DIAMOND_CROSSBOW.get());
                         output.accept(ModItems.NETHERITE_CROSSBOW.get());
+                        output.accept(ModItems.DENDERITE_CROSSBOW.get());
 
                         //...(ModItems.<NAME>.get())---> get() solo es usado para cosas del mod, no para los vanilla.
                     })
