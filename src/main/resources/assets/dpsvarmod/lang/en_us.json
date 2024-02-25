@@ -7,6 +7,10 @@
 	"block.dpsvarmod.beetroot_basket": "Beetroot Basket",
 	"block.dpsvarmod.denderite_block": "Denderite Block",
 
+	"item.dpsvarmod.egg_yolk_and_white": "Egg Yolk and White",
+	"item.dpsvarmod.boiled_egg": "Boiled Egg",
+	"item.dpsvarmod.fried_eggs": "Fried Eggs",
+
 	"item.dpsvarmod.smithing_template.denderite_upgrade.applies_to": "Netherite Equipment and Horse Armor, Bow, Crossbow, Elytra",
 	"item.dpsvarmod.smithing_template.denderite_upgrade.ingredients": "Denderite Ingot",
 	"item.dpsvarmod.smithing_template.denderite_upgrade.base_slot_description": "Add netherite armor, weapon, tool, bow, crossbow or horse armor. and elytra",
@@ -15,7 +19,7 @@
 	"upgrade.dpsvarmod.denderite_upgrade":  "Denderite Upgrade",
 
 	"item.dpsvarmod.dps_tab_item":  "DP",
-	"item.dpsvarmod.denderite_scrap": "Denderite_Scrap",
+	"item.dpsvarmod.denderite_scrap": "Denderite Scrap",
 	"item.dpsvarmod.denderite_ingot": "Denderite Ingot",
 
 	"item.dpsvarmod.netherite_horse_armor": "Netherite Horse Armor",

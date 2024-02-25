@@ -25,7 +25,6 @@ public class dpsvarmod {
 
         ModBlocks.BLOCKS.register(MOD_EVENT_BUS);
         ModItems.ITEMS.register(MOD_EVENT_BUS);
-        ModItems.HORSE_ARMORS.register(MOD_EVENT_BUS);
         ModItems.BOWS.register(MOD_EVENT_BUS);
         ModItems.CROSSBOWS.register(MOD_EVENT_BUS);
     }
