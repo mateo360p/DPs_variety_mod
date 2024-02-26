@@ -1,14 +1,11 @@
 package com.mateo360p.dpsvarmod.item;
 
-import com.mateo360p.dpsvarmod.item.custombow.BowTiers;
+import com.mateo360p.dpsvarmod.item.custombow.ModBowTiers;
 import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
 import com.mateo360p.dpsvarmod.item.customsmithingtemplate.DenderiteSmithingTemplate;
+import com.mateo360p.dpsvarmod.item.customtools.ModToolTiers;
 import com.mateo360p.dpsvarmod.item.items.DPsTabItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CrossbowItem;
-import net.minecraft.world.item.HorseArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -41,6 +38,13 @@ public class ModItems {
     public static final RegistryObject<Item> DIAMOND_CROSSBOW;
     public static final RegistryObject<Item> NETHERITE_CROSSBOW;
     public static final RegistryObject<Item> DENDERITE_CROSSBOW;
+
+// Tools & Swords
+    public static final RegistryObject<Item> DENDERITE_SWORD;
+    public static final RegistryObject<Item> DENDERITE_PICKAXE;
+    public static final RegistryObject<Item> DENDERITE_AXE;
+    public static final RegistryObject<Item> DENDERITE_SHOVEL;
+    public static final RegistryObject<Item> DENDERITE_HOE;
 //ALL ITEMS
     static {
         //REGISTRIES
@@ -83,13 +87,13 @@ public class ModItems {
 
         //BOWS
         DIAMOND_BOW = BOWS.register("diamond_bow", () -> {
-            return new CustomBowItem(BowTiers.DIAMOND, new Item.Properties());
+            return new CustomBowItem(ModBowTiers.DIAMOND, new Item.Properties());
         });
         NETHERITE_BOW = BOWS.register("netherite_bow", () -> {
-            return new CustomBowItem(BowTiers.NETHERITE, new Item.Properties().fireResistant());
+            return new CustomBowItem(ModBowTiers.NETHERITE, new Item.Properties().fireResistant());
         });
         DENDERITE_BOW = BOWS.register("denderite_bow", () -> {
-            return new CustomBowItem(BowTiers.DENDERITE, new Item.Properties().fireResistant());
+            return new CustomBowItem(ModBowTiers.DENDERITE, new Item.Properties().fireResistant());
         });
 
 
@@ -102,6 +106,24 @@ public class ModItems {
         });
         DENDERITE_CROSSBOW = CROSSBOWS.register("denderite_crossbow", () -> {
             return new CrossbowItem(new Item.Properties().durability(2390).fireResistant());
+        });
+
+
+        //TOOLS & SWORDS
+        DENDERITE_SWORD = ITEMS.register("denderite_sword", () -> {
+            return new SwordItem(ModToolTiers.DENDERITE, 4, -2.2F, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_PICKAXE = ITEMS.register("denderite_pickaxe", () -> {
+            return new PickaxeItem(ModToolTiers.DENDERITE, 1, -2.7F, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_AXE = ITEMS.register("denderite_axe", () -> {
+            return new AxeItem(ModToolTiers.DENDERITE, 6.0F, -2.8F, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_SHOVEL = ITEMS.register("denderite_shovel", () -> {
+            return new ShovelItem(ModToolTiers.DENDERITE, 1.45F, -2.8F, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_HOE = ITEMS.register("denderite_hoe", () -> {
+            return new HoeItem(ModToolTiers.DENDERITE, -4, 0.0F, (new Item.Properties()).fireResistant());
         });
     }
 }

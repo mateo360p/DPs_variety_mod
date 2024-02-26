@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "esa",
+    "eta",
+    "eda"
+  ],
+  "key": {
+    "s": {
+      "item": "dpsvarmod:denderite_upgrade_smithing_template"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "e": {
+      "item": "minecraft:emerald"
+    },
+    "t": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_upgrade_smithing_template",
+    "count": 2
+  }
+}

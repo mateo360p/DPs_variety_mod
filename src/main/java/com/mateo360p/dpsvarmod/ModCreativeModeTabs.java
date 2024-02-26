@@ -18,28 +18,33 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DP_TAB_ITEM.get()))
                     .title(Component.translatable("creativetab.dps_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        //BLOCKS
+                        //FOOD STUFF
+                        output.accept(ModItems.EGG_YAW.get());
+                        output.accept(ModItems.BOILED_EGG.get());
+                        output.accept(ModItems.FRIED_EGGS.get());
                         output.accept(ModBlocks.CARROT_BASKET.get());
                         output.accept(ModBlocks.POTATO_BASKET.get());
                         output.accept(ModBlocks.APPLE_BASKET.get());
                         output.accept(ModBlocks.BEETROOT_BASKET.get());
-                        output.accept(ModBlocks.DENDERITE_BLOCK.get());
-                        //FOODS
-                        output.accept(ModItems.BOILED_EGG.get());
-                        output.accept(ModItems.FRIED_EGGS.get());
-                        //ITEMS
-                        output.accept(ModItems.EGG_YAW.get());
-                        output.accept(ModItems.DENDERITE_UPGRADE_TEMPLATE.get());
+                        //DENDERITE STUFF
                         output.accept(ModItems.DENDERITE_SCRAP.get());
                         output.accept(ModItems.DENDERITE_INGOT.get());
-                        //BOWS
+                        output.accept(ModBlocks.DENDERITE_ORE.get());
+                        output.accept(ModBlocks.DENDERITE_SCRAP_BLOCK.get());
+                        output.accept(ModBlocks.DENDERITE_BLOCK.get());
+                        output.accept(ModItems.DENDERITE_UPGRADE_TEMPLATE.get());
+                        output.accept(ModItems.DENDERITE_SWORD.get());;
+                        output.accept(ModItems.DENDERITE_PICKAXE.get());
+                        output.accept(ModItems.DENDERITE_AXE.get());
+                        output.accept(ModItems.DENDERITE_SHOVEL.get());
+                        output.accept(ModItems.DENDERITE_HOE.get());
+                        //HORSE ARMORS STUFF
+                        output.accept(ModItems.NETHERITE_HORSE_ARMOR.get());
+                        output.accept(ModItems.DENDERITE_HORSE_ARMOR.get());
+                        //ARCHERY STUFF
                         output.accept(ModItems.DIAMOND_BOW.get());
                         output.accept(ModItems.NETHERITE_BOW.get());
                         output.accept(ModItems.DENDERITE_BOW.get());
-                        //HORSE ARMORS
-                        output.accept(ModItems.NETHERITE_HORSE_ARMOR.get());
-                        output.accept(ModItems.DENDERITE_HORSE_ARMOR.get());
-                        //CROSSBOWS
                         output.accept(ModItems.DIAMOND_CROSSBOW.get());
                         output.accept(ModItems.NETHERITE_CROSSBOW.get());
                         output.accept(ModItems.DENDERITE_CROSSBOW.get());

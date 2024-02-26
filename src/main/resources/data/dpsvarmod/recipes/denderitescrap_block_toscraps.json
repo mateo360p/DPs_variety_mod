@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dpsvarmod:denderite_scrap_block"
+    }
+  ],
+  "result": {
+    "item": "dpsvarmod:denderite_scrap",
+    "count": 9
+  }
+}

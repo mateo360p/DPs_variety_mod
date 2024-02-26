@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dpsvarmod:block/denderite_ore"
+  },
+  "render_type": "solid"
+}

@@ -1,11 +1,14 @@
 {
 	"creativetab.dps_tab": "DP's Tab",
+	"waitwhat.dpsvarmod.dps_tab_item": "Wait, how did you get dis?",
 
 	"block.dpsvarmod.carrot_basket": "Carrot Basket",
 	"block.dpsvarmod.potato_basket": "Potato Basket",
 	"block.dpsvarmod.apple_basket": "Apple Basket",
 	"block.dpsvarmod.beetroot_basket": "Beetroot Basket",
 	"block.dpsvarmod.denderite_block": "Denderite Block",
+	"block.dpsvarmod.denderite_ore": "Denderite Ore",
+	"block.dpsvarmod.denderite_scrap_block": "Denderite Scrap Block",
 
 	"item.dpsvarmod.egg_yolk_and_white": "Egg Yolk and White",
 	"item.dpsvarmod.boiled_egg": "Boiled Egg",
@@ -24,6 +27,12 @@
 
 	"item.dpsvarmod.netherite_horse_armor": "Netherite Horse Armor",
 	"item.dpsvarmod.denderite_horse_armor": "Denderite Horse Armor",
+
+	"item.dpsvarmod.denderite_sword": "Denderite Sword",
+	"item.dpsvarmod.denderite_pickaxe": "Denderite Pickaxe",
+	"item.dpsvarmod.denderite_axe": "Denderite Axe",
+	"item.dpsvarmod.denderite_shovel": "Denderite Shovel",
+	"item.dpsvarmod.denderite_hoe": "Denderite Hoe",
 
 	"item.dpsvarmod.diamond_bow": "Diamond Bow",
 	"item.dpsvarmod.netherite_bow": "Netherite Bow",

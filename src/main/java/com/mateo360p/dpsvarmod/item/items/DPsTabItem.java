@@ -17,6 +17,7 @@ import net.minecraft.network.chat.Component;
 import java.util.List;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
+import org.jetbrains.annotations.Nullable;
 
 public class DPsTabItem extends Item {
     public DPsTabItem() {
@@ -42,13 +43,12 @@ public class DPsTabItem extends Item {
     }
 
     @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level plevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.translatable("waitwhat.dpsvarmod.dps_tab_item"));
+        super.appendHoverText(pStack, plevel, pTooltipComponents, pIsAdvanced);
+    }
+    @Override
     public boolean isCorrectToolForDrops(BlockState state) {
         return true;
-    }
-
-    @Override
-    public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-        super.appendHoverText(itemstack, world, list, flag);
-        list.add(Component.literal("Wait.. How did you get this?"));
     }
 }

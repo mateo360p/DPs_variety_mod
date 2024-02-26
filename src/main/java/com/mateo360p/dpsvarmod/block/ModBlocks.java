@@ -23,6 +23,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> APPLE_BASKET;
     public static final RegistryObject<Block> BEETROOT_BASKET;
     public static final RegistryObject<Block> DENDERITE_BLOCK;
+    public static final RegistryObject<Block> DENDERITE_ORE;
+    public static final RegistryObject<Block> DENDERITE_SCRAP_BLOCK;
 
 //ALL BLOCKS
     static{
@@ -37,6 +39,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).mapColor(MapColor.TERRACOTTA_PINK)),new Item.Properties());
         DENDERITE_BLOCK = registerBlock("denderite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).mapColor(MapColor.COLOR_MAGENTA)),new Item.Properties().fireResistant());
+        DENDERITE_ORE = registerBlock("denderite_ore",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_MAGENTA)),new Item.Properties().fireResistant());
+        DENDERITE_SCRAP_BLOCK = registerBlock("denderite_scrap_block",
+                () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_PURPLE)),new Item.Properties().fireResistant());
     }
 
 //Auto register

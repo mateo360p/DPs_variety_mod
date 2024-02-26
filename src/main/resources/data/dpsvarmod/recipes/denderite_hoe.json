@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "dpsvarmod:denderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_hoe"
+  },
+  "template": {
+    "item": "dpsvarmod:denderite_upgrade_smithing_template"
+  }
+}
