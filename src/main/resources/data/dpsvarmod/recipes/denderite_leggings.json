@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "dpsvarmod:denderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_leggings"
+  },
+  "template": {
+    "item": "dpsvarmod:denderite_upgrade_smithing_template"
+  }
+}

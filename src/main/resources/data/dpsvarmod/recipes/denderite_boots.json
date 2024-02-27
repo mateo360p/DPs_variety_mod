@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "dpsvarmod:denderite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "result": {
+    "item": "dpsvarmod:denderite_boots"
+  },
+  "template": {
+    "item": "dpsvarmod:denderite_upgrade_smithing_template"
+  }
+}

@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod.item;
 
+import com.mateo360p.dpsvarmod.item.customarmor.ModArmorMaterials;
 import com.mateo360p.dpsvarmod.item.custombow.ModBowTiers;
 import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
 import com.mateo360p.dpsvarmod.item.customcrossbow.CustomCrossbowItem;
@@ -47,6 +48,13 @@ public class ModItems {
     public static final RegistryObject<Item> DENDERITE_AXE;
     public static final RegistryObject<Item> DENDERITE_SHOVEL;
     public static final RegistryObject<Item> DENDERITE_HOE;
+
+// Armor
+public static final RegistryObject<Item> DENDERITE_HELMET;
+    public static final RegistryObject<Item> DENDERITE_CHESTPLATE;
+    public static final RegistryObject<Item> DENDERITE_LEGGINGS;
+    public static final RegistryObject<Item> DENDERITE_BOOTS;
+
 //ALL ITEMS
     static {
         //REGISTRIES
@@ -126,6 +134,20 @@ public class ModItems {
         });
         DENDERITE_HOE = ITEMS.register("denderite_hoe", () -> {
             return new HoeItem(ModToolTiers.DENDERITE, -4, 0.0F, (new Item.Properties()).fireResistant());
+        });
+
+        //ARMOR
+        DENDERITE_HELMET = ITEMS.register("denderite_helmet", () -> {
+            return new ArmorItem(ModArmorMaterials.DENDERITE, ArmorItem.Type.HELMET, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_CHESTPLATE = ITEMS.register("denderite_chestplate", () -> {
+            return new ArmorItem(ModArmorMaterials.DENDERITE, ArmorItem.Type.CHESTPLATE, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_LEGGINGS = ITEMS.register("denderite_leggings", () -> {
+            return new ArmorItem(ModArmorMaterials.DENDERITE, ArmorItem.Type.LEGGINGS, (new Item.Properties()).fireResistant());
+        });
+        DENDERITE_BOOTS = ITEMS.register("denderite_boots", () -> {
+            return new ArmorItem(ModArmorMaterials.DENDERITE, ArmorItem.Type.BOOTS, (new Item.Properties()).fireResistant());
         });
     }
 }

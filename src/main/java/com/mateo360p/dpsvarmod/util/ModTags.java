@@ -1,6 +1,8 @@
 package com.mateo360p.dpsvarmod.util;
 
 import com.mateo360p.dpsvarmod.dpsvarmod;
+import com.mateo360p.dpsvarmod.item.ModItems;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -19,6 +21,7 @@ public class ModTags {
         }
     }
     public static class Items{
+
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation((dpsvarmod.MODID), name));
         }

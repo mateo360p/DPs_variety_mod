@@ -35,6 +35,11 @@
 	"item.dpsvarmod.denderite_shovel": "Denderite Shovel",
 	"item.dpsvarmod.denderite_hoe": "Denderite Hoe",
 
+	"item.dpsvarmod.denderite_helmet": "Denderite Helmet",
+	"item.dpsvarmod.denderite_chestplate": "Denderite Chestplate",
+	"item.dpsvarmod.denderite_leggings": "Denderite Leggings",
+	"item.dpsvarmod.denderite_boots": "Denderite Boots",
+
 	"item.dpsvarmod.diamond_bow": "Diamond Bow",
 	"item.dpsvarmod.netherite_bow": "Netherite Bow",
 	"item.dpsvarmod.denderite_bow": "Denderite Bow",

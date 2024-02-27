@@ -4,7 +4,6 @@ import com.mateo360p.dpsvarmod.config.Config;
 import com.mateo360p.dpsvarmod.item.ModItems;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -18,11 +17,10 @@ public enum ModCrossbowTiers implements CrossbowTier {
     private final float speedBonus;
     private final int chargeTime;
     private final int enchantmentValue;
-    @NotNull
     private final Supplier<Ingredient> ingredient;
 
 
-    private ModCrossbowTiers(int durability, Supplier damageBonus, float speedBonus, int chargeTime, int enchantmentValue, @NotNull Supplier<Ingredient> ingredient) {
+    private ModCrossbowTiers(int durability, Supplier damageBonus, float speedBonus, int chargeTime, int enchantmentValue, Supplier<Ingredient> ingredient) {
         this.uses = durability;
         this.damageBonus = damageBonus;
         this.speedBonus = speedBonus;
@@ -49,7 +47,6 @@ public enum ModCrossbowTiers implements CrossbowTier {
     public int getEnchantmentValue() {
         return this.enchantmentValue;
     }
-    @NotNull
     public Ingredient getIngredient() {
         return this.ingredient.get();
     }

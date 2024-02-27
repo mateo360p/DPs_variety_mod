@@ -4,7 +4,6 @@ import com.mateo360p.dpsvarmod.config.Config;
 import com.mateo360p.dpsvarmod.item.ModItems;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -16,11 +15,10 @@ public enum ModBowTiers implements BowTier {
     private final int uses;
     private Supplier<Double> damageBonus;
     private final int enchantmentValue;
-    @NotNull
     private final Supplier<Ingredient> ingredient;
 
 
-    private ModBowTiers(int durability, Supplier damageBonus, int enchantmentValue, @NotNull Supplier<Ingredient> ingredient) {
+    private ModBowTiers(int durability, Supplier damageBonus, int enchantmentValue, Supplier<Ingredient> ingredient) {
         this.uses = durability;
         this.damageBonus = damageBonus;
         this.enchantmentValue = enchantmentValue;
@@ -38,7 +36,7 @@ public enum ModBowTiers implements BowTier {
     public int getEnchantmentValue() {
         return this.enchantmentValue;
     }
-    @NotNull
+
     public Ingredient getIngredient() {
         return this.ingredient.get();
     }

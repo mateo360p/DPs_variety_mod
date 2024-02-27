@@ -38,6 +38,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.DENDERITE_AXE.get());
                         output.accept(ModItems.DENDERITE_SHOVEL.get());
                         output.accept(ModItems.DENDERITE_HOE.get());
+                        output.accept(ModItems.DENDERITE_HELMET.get());
+                        output.accept(ModItems.DENDERITE_CHESTPLATE.get());
+                        output.accept(ModItems.DENDERITE_LEGGINGS.get());
+                        output.accept(ModItems.DENDERITE_BOOTS.get());
                         //HORSE ARMORS STUFF
                         output.accept(ModItems.NETHERITE_HORSE_ARMOR.get());
                         output.accept(ModItems.DENDERITE_HORSE_ARMOR.get());
