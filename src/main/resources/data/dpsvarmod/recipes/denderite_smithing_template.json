@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "esa",
-    "eta",
-    "eda"
+    "ase",
+    "ate",
+    "ade"
   ],
   "key": {
     "s": {

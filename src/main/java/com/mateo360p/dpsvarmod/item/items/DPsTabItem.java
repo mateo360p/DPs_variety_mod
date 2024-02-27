@@ -1,6 +1,7 @@
 
 package com.mateo360p.dpsvarmod.item.items;
 
+import net.minecraft.ChatFormatting;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.state.BlockState;
@@ -17,7 +18,6 @@ import net.minecraft.network.chat.Component;
 import java.util.List;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
-import org.jetbrains.annotations.Nullable;
 
 public class DPsTabItem extends Item {
     public DPsTabItem() {
@@ -43,8 +43,8 @@ public class DPsTabItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level plevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("waitwhat.dpsvarmod.dps_tab_item"));
+    public void appendHoverText(ItemStack pStack, Level plevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.translatable("waitwhat.dpsvarmod.dps_tab_item").withStyle(ChatFormatting.GREEN));
         super.appendHoverText(pStack, plevel, pTooltipComponents, pIsAdvanced);
     }
     @Override

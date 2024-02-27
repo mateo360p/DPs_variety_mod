@@ -2,6 +2,8 @@ package com.mateo360p.dpsvarmod.item;
 
 import com.mateo360p.dpsvarmod.item.custombow.ModBowTiers;
 import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
+import com.mateo360p.dpsvarmod.item.customcrossbow.CustomCrossbowItem;
+import com.mateo360p.dpsvarmod.item.customcrossbow.ModCrossbowTiers;
 import com.mateo360p.dpsvarmod.item.customsmithingtemplate.DenderiteSmithingTemplate;
 import com.mateo360p.dpsvarmod.item.customtools.ModToolTiers;
 import com.mateo360p.dpsvarmod.item.items.DPsTabItem;
@@ -99,13 +101,13 @@ public class ModItems {
 
         //CROSSBOWS--these are prototypes
         DIAMOND_CROSSBOW = CROSSBOWS.register("diamond_crossbow", () -> {
-            return new CrossbowItem(new Item.Properties().durability(793));
+            return new CustomCrossbowItem(ModCrossbowTiers.DIAMOND, new Item.Properties());
         });
         NETHERITE_CROSSBOW = CROSSBOWS.register("netherite_crossbow", () -> {
-            return new CrossbowItem(new Item.Properties().durability(1372).fireResistant());
+            return new CustomCrossbowItem(ModCrossbowTiers.NETHERITE, new Item.Properties().fireResistant());
         });
         DENDERITE_CROSSBOW = CROSSBOWS.register("denderite_crossbow", () -> {
-            return new CrossbowItem(new Item.Properties().durability(2390).fireResistant());
+            return new CustomCrossbowItem(ModCrossbowTiers.DENDERITE, new Item.Properties().fireResistant());
         });
 
 

@@ -3,7 +3,7 @@
     "pattern":
     [
         " d ",
-        "dbd",
+        "dcd",
         " d"
     ],
     "key":
@@ -12,7 +12,7 @@
         {
             "item": "minecraft:diamond"
         },
-        "b":
+        "c":
         {
             "item": "minecraft:crossbow"
         }
