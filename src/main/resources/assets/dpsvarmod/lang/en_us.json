@@ -12,8 +12,11 @@
 	"block.dpsvarmod.denderite_scrap_block": "Denderite Scrap Block",
 
 	"item.dpsvarmod.egg_yolk_and_white": "Egg Yolk and White",
+	"item.dpsvarmod.lemon": "Lemon",
 	"item.dpsvarmod.boiled_egg": "Boiled Egg",
 	"item.dpsvarmod.fried_eggs": "Fried Eggs",
+	"item.dpsvarmod.cheese": "Cheese",
+	"item.dpsvarmod.lemon_juice_bottle": "Lemon Juice Bottle",
 
 	"item.dpsvarmod.smithing_template.denderite_upgrade.applies_to": "Netherite Equipment and Horse Armor, Bow, Crossbow, Elytra",
 	"item.dpsvarmod.smithing_template.denderite_upgrade.ingredients": "Denderite Ingot",

@@ -1,4 +1,4 @@
-package com.mateo360p.dpsvarmod.item.customarmor;
+package com.mateo360p.dpsvarmod.item.itemUtil;
 
 import com.mateo360p.dpsvarmod.dpsvarmod;
 import com.mateo360p.dpsvarmod.item.ModItems;

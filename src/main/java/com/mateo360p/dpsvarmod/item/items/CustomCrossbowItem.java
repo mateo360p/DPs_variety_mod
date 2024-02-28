@@ -1,8 +1,10 @@
-package com.mateo360p.dpsvarmod.item.customcrossbow;
+package com.mateo360p.dpsvarmod.item.items;
 
 import com.google.common.collect.Lists;
 import java.util.List;
 import javax.annotation.Nullable;
+
+import com.mateo360p.dpsvarmod.item.itemUtil.CrossbowTier;
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.nbt.CompoundTag;
@@ -36,7 +38,6 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.event.ForgeEventFactory;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
 

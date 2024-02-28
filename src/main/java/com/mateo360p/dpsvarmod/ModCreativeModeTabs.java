@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EGG_YAW.get());
                         output.accept(ModItems.BOILED_EGG.get());
                         output.accept(ModItems.FRIED_EGGS.get());
+                        output.accept(ModItems.LEMON_BOTTLE.get());
                         output.accept(ModBlocks.CARROT_BASKET.get());
                         output.accept(ModBlocks.POTATO_BASKET.get());
                         output.accept(ModBlocks.APPLE_BASKET.get());

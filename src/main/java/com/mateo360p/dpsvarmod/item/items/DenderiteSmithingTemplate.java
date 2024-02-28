@@ -1,4 +1,4 @@
-package com.mateo360p.dpsvarmod.item.customsmithingtemplate;
+package com.mateo360p.dpsvarmod.item.items;
 
 import java.util.List;
 import net.minecraft.ChatFormatting;

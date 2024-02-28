@@ -1,6 +1,6 @@
 package com.mateo360p.dpsvarmod.util;
 
-import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
+import com.mateo360p.dpsvarmod.item.items.CustomBowItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;

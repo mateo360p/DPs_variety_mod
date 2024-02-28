@@ -1,7 +1,8 @@
-package com.mateo360p.dpsvarmod.item.custombow;
+package com.mateo360p.dpsvarmod.item.items;
 
 import java.util.List;
 
+import com.mateo360p.dpsvarmod.item.itemUtil.BowTier;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.projectile.AbstractArrow;

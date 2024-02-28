@@ -1,4 +1,4 @@
-package com.mateo360p.dpsvarmod.item.customcrossbow;
+package com.mateo360p.dpsvarmod.item.itemUtil;
 
 import net.minecraft.world.item.crafting.Ingredient;
 

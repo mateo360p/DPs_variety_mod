@@ -1,13 +1,11 @@
 package com.mateo360p.dpsvarmod.item;
 
-import com.mateo360p.dpsvarmod.item.customarmor.ModArmorMaterials;
-import com.mateo360p.dpsvarmod.item.custombow.ModBowTiers;
-import com.mateo360p.dpsvarmod.item.custombow.CustomBowItem;
-import com.mateo360p.dpsvarmod.item.customcrossbow.CustomCrossbowItem;
-import com.mateo360p.dpsvarmod.item.customcrossbow.ModCrossbowTiers;
-import com.mateo360p.dpsvarmod.item.customsmithingtemplate.DenderiteSmithingTemplate;
-import com.mateo360p.dpsvarmod.item.customtools.ModToolTiers;
-import com.mateo360p.dpsvarmod.item.items.DPsTabItem;
+import com.mateo360p.dpsvarmod.item.itemUtil.ModArmorMaterials;
+import com.mateo360p.dpsvarmod.item.itemUtil.ModBowTiers;
+import com.mateo360p.dpsvarmod.item.itemUtil.ModFoods;
+import com.mateo360p.dpsvarmod.item.items.*;
+import com.mateo360p.dpsvarmod.item.itemUtil.ModCrossbowTiers;
+import com.mateo360p.dpsvarmod.item.itemUtil.ModToolTiers;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,11 +23,15 @@ public class ModItems {
     public static final RegistryObject<Item> DENDERITE_SCRAP;
     public static final RegistryObject<Item> DENDERITE_INGOT;
     public static final RegistryObject<Item> EGG_YAW;
+    public static final RegistryObject<Item> LEMON;
     
 // Foods
     public static final RegistryObject<Item> FRIED_EGGS;
     public static final RegistryObject<Item> BOILED_EGG;
-// Items
+    public static final RegistryObject<Item> CHEESE;
+    public static final RegistryObject<Item> LEMON_BOTTLE;
+
+// Horse Armors
     public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR;
     public static final RegistryObject<Item> DENDERITE_HORSE_ARMOR;
 // Bows
@@ -75,18 +77,35 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         EGG_YAW = ITEMS.register("egg_yolk_and_white", () -> {
             return new Item(new Item.Properties().stacksTo(64));
         });
+        LEMON = ITEMS.register("lemon", () -> {
+            return new Item(new Item.Properties().stacksTo(64));
+        });
 
 
         //FOODS
+
+        /*
+        [TEST_DRINK] = [ITEMS].register(-String- [name], () -> {
+            return new CustomDrinkableBottleItem(-Item- [REMAIN ITEM], -int- [DRINK DURATION], -boolean- [REMAIN ABLE], new Item.Properties.[properties]));
+        });
+        */
+
         FRIED_EGGS = ITEMS.register("fried_eggs", () -> {
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.FRIED_EGGS));
         });
         BOILED_EGG = ITEMS.register("boiled_egg", () -> {
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.BOILED_EGG));
         });
+        CHEESE = ITEMS.register("cheese", () -> {
+            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.CHEESE));
+        });
+        LEMON_BOTTLE = ITEMS.register("lemon_juice_bottle", () -> {
+            return new CustomDrinkableItem(Items.GLASS_BOTTLE,32, true, new Item.Properties().stacksTo(64).food(ModFoods.LEMON_BOTTLE));
+        });
 
 
-        //HORSE ARMORS
+
+    //HORSE ARMORS
         NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor", () -> {
             return new HorseArmorItem(17, "netherite",new Item.Properties().fireResistant().stacksTo(1));
         });
@@ -96,6 +115,11 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
 
 
         //BOWS
+        /*
+        [TEST_BOW] = [BOWS].register(-String- [name], () -> {
+            return new CustomBowItem(ModBowTiers.[TIER], new Item.Properties.[properties]));
+        });
+        */
         DIAMOND_BOW = BOWS.register("diamond_bow", () -> {
             return new CustomBowItem(ModBowTiers.DIAMOND, new Item.Properties());
         });
