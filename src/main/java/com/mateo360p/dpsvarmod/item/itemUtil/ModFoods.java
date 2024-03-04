@@ -17,4 +17,11 @@ public class ModFoods {
     public static final FoodProperties COMBINED_ROTTEN_FLESH = new FoodProperties.Builder()
             .meat().nutrition(7).saturationMod(0.28f)
             .effect(new MobEffectInstance(MobEffects.HUNGER, 1200, 2), 1F).build();
+    public static final FoodProperties TOMATO = new FoodProperties.Builder()
+            .nutrition(1).saturationMod(1f).build();
+    public static final FoodProperties LETTUCE = new FoodProperties.Builder()
+            .nutrition(1).saturationMod(1f).build();
+    public static final FoodProperties CORN = new FoodProperties.Builder()
+            .nutrition(1).saturationMod(1f).build();
+
 }

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "food",
   "experience": 0.35,
   "cookingtime": 200,
   "group": "eggs",

@@ -24,8 +24,13 @@ public class ModItems {
     public static final RegistryObject<Item> DENDERITE_INGOT;
     public static final RegistryObject<Item> EGG_YAW;
     public static final RegistryObject<Item> LEMON;
+    public static final RegistryObject<Item> GARLIC;
+    public static final RegistryObject<Item> ONION;
     
 // Foods
+    public static final RegistryObject<Item> LETTUCE;
+    public static final RegistryObject<Item> TOMATO;
+    public static final RegistryObject<Item> CORN;
     public static final RegistryObject<Item> FRIED_EGGS;
     public static final RegistryObject<Item> BOILED_EGG;
     public static final RegistryObject<Item> CHEESE;
@@ -82,6 +87,15 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         LEMON = ITEMS.register("lemon", () -> {
             return new Item(new Item.Properties().stacksTo(64));
         });
+        GARLIC = ITEMS.register("garlic", () -> {
+            return new Item(new Item.Properties().stacksTo(64));
+        });
+        ONION = ITEMS.register("onion", () -> {
+            return new Item(new Item.Properties().stacksTo(64));
+        });
+        OIL_BOTTLE = ITEMS.register("vegetable_oil_bottle", () -> {
+            return new CustomContainerItem(Items.GLASS_BOTTLE, new Item.Properties().stacksTo(64));
+        });
 
 
         //FOODS
@@ -98,6 +112,15 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         BOILED_EGG = ITEMS.register("boiled_egg", () -> {
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.BOILED_EGG));
         });
+        LETTUCE = ITEMS.register("lettuce", () -> {
+            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.LETTUCE));
+        });
+        TOMATO = ITEMS.register("tomato", () -> {
+            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.TOMATO));
+        });
+        CORN = ITEMS.register("corn", () -> {
+            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.CORN));
+        });
         CHEESE = ITEMS.register("cheese", () -> {
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.CHEESE));
         });
@@ -107,14 +130,11 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         COMBINED_ROTTEN_FLESH = ITEMS.register("combined_rotten_flesh", () -> {
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.COMBINED_ROTTEN_FLESH));
         });
-        OIL_BOTTLE = ITEMS.register("vegetable_oil_bottle", () -> {
-            return new CustomContainerItem(Items.GLASS_BOTTLE, new Item.Properties().stacksTo(64));
-        });
 
 
 
 
-            //HORSE ARMORS
+        //HORSE ARMORS
         NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor", () -> {
             return new HorseArmorItem(17, "netherite",new Item.Properties().fireResistant().stacksTo(1));
         });
