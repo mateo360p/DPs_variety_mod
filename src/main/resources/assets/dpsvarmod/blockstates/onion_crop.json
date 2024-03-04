@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "dpsvarmod:block/onion_stage0"
+    },
+    "age=1": {
+      "model": "dpsvarmod:block/onion_stage0"
+    },
+    "age=2": {
+      "model": "dpsvarmod:block/onion_stage1"
+    },
+    "age=3": {
+      "model": "dpsvarmod:block/onion_stage1"
+    },
+    "age=4": {
+      "model": "dpsvarmod:block/onion_stage2"
+    },
+    "age=5": {
+      "model": "dpsvarmod:block/onion_stage2"
+    },
+    "age=6": {
+      "model": "dpsvarmod:block/onion_stage2"
+    },
+    "age=7": {
+      "model": "dpsvarmod:block/onion_stage3"
+    }
+  }
+}

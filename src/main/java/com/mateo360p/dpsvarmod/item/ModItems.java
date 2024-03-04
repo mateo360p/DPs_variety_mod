@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod.item;
 
+import com.mateo360p.dpsvarmod.block.ModBlocks;
 import com.mateo360p.dpsvarmod.item.itemUtil.ModArmorMaterials;
 import com.mateo360p.dpsvarmod.item.itemUtil.ModBowTiers;
 import com.mateo360p.dpsvarmod.item.itemUtil.ModFoods;
@@ -91,7 +92,7 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
             return new Item(new Item.Properties().stacksTo(64));
         });
         ONION = ITEMS.register("onion", () -> {
-            return new Item(new Item.Properties().stacksTo(64));
+            return new ItemNameBlockItem(ModBlocks.ONION_CROP.get(),new Item.Properties().stacksTo(64));
         });
         OIL_BOTTLE = ITEMS.register("vegetable_oil_bottle", () -> {
             return new CustomContainerItem(Items.GLASS_BOTTLE, new Item.Properties().stacksTo(64));

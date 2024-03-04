@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod.block;
 
+import com.mateo360p.dpsvarmod.block.blocks.OnionBlock;
 import com.mateo360p.dpsvarmod.block.blocks.customFacingBlock;
 import com.mateo360p.dpsvarmod.dpsvarmod;
 import com.mateo360p.dpsvarmod.item.ModItems;
@@ -10,6 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,6 +29,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DENDERITE_ORE;
     public static final RegistryObject<Block> DENDERITE_SCRAP_BLOCK;
     public static final RegistryObject<Block> COOKING_TABLE;
+    public static final RegistryObject<Block>  ONION_CROP;
 
 //ALL BLOCKS
     static{
@@ -47,6 +50,8 @@ public class ModBlocks {
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_PURPLE)),new Item.Properties().fireResistant());
         COOKING_TABLE = registerBlock("cooking_table",
                 () -> new customFacingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)),new Item.Properties());
+        ONION_CROP = BLOCKS.register("onion_crop",
+                () -> new OnionBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
     }
 
 //Auto register
