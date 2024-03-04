@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "ppp",
+        "ili",
+        "isi"
+    ],
+    "key": {
+        "p": {
+            "tag": "minecraft:planks"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "l": {
+            "tag": "minecraft:logs"
+        },
+        "s": {
+            "item": "minecraft:stone"
+        }
+    },
+    "result": {
+        "item": "dpsvarmod:cooking_table",
+        "count": 1
+    }
+}

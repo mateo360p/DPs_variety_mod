@@ -29,7 +29,9 @@ public class ModItems {
     public static final RegistryObject<Item> FRIED_EGGS;
     public static final RegistryObject<Item> BOILED_EGG;
     public static final RegistryObject<Item> CHEESE;
+    public static final RegistryObject<Item> COMBINED_ROTTEN_FLESH;
     public static final RegistryObject<Item> LEMON_BOTTLE;
+    public static final RegistryObject<Item> OIL_BOTTLE;
 
 // Horse Armors
     public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR;
@@ -102,10 +104,17 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         LEMON_BOTTLE = ITEMS.register("lemon_juice_bottle", () -> {
             return new CustomDrinkableItem(Items.GLASS_BOTTLE,32, true, new Item.Properties().stacksTo(64).food(ModFoods.LEMON_BOTTLE));
         });
+        COMBINED_ROTTEN_FLESH = ITEMS.register("combined_rotten_flesh", () -> {
+            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.COMBINED_ROTTEN_FLESH));
+        });
+        OIL_BOTTLE = ITEMS.register("vegetable_oil_bottle", () -> {
+            return new CustomContainerItem(Items.GLASS_BOTTLE, new Item.Properties().stacksTo(64));
+        });
 
 
 
-    //HORSE ARMORS
+
+            //HORSE ARMORS
         NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor", () -> {
             return new HorseArmorItem(17, "netherite",new Item.Properties().fireResistant().stacksTo(1));
         });

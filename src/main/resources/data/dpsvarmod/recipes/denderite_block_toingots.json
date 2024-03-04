@@ -1,6 +1,7 @@
 {
   "type": "crafting_shapeless",
   "category": "misc",
+  "group": "denderite_ingot",
   "ingredients": [
     {
       "item": "dpsvarmod:denderite_block"

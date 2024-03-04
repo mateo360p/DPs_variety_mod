@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod.block;
 
+import com.mateo360p.dpsvarmod.block.blocks.customFacingBlock;
 import com.mateo360p.dpsvarmod.dpsvarmod;
 import com.mateo360p.dpsvarmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,6 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DENDERITE_BLOCK;
     public static final RegistryObject<Block> DENDERITE_ORE;
     public static final RegistryObject<Block> DENDERITE_SCRAP_BLOCK;
+    public static final RegistryObject<Block> COOKING_TABLE;
 
 //ALL BLOCKS
     static{
@@ -43,6 +45,8 @@ public class ModBlocks {
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_MAGENTA)),new Item.Properties().fireResistant());
         DENDERITE_SCRAP_BLOCK = registerBlock("denderite_scrap_block",
                 () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).mapColor(MapColor.TERRACOTTA_PURPLE)),new Item.Properties().fireResistant());
+        COOKING_TABLE = registerBlock("cooking_table",
+                () -> new customFacingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)),new Item.Properties());
     }
 
 //Auto register

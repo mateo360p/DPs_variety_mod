@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "group": "vanilla_horse_armors",
   "pattern": [
     "  g",
     "bgb",

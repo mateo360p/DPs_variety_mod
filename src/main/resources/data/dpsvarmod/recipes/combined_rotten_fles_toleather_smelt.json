@@ -3,9 +3,8 @@
   "category": "misc",
   "experience": 0.35,
   "cookingtime": 200,
-  "group": "eggs",
   "ingredient": {
-    "item": "dpsvarmod:egg_yolk_and_white"
+    "item": "dpsvarmod:combined_rotten_flesh"
   },
-  "result": "dpsvarmod:fried_eggs"
+  "result": "minecraft:leather"
 }

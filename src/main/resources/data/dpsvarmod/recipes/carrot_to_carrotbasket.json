@@ -1,6 +1,7 @@
 {
   "type": "crafting_shaped",
   "category": "misc",
+  "group": "food_baskets",
   "pattern": [
     "CCC",
     "CCC",

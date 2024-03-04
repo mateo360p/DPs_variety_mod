@@ -3,6 +3,7 @@
   "category": "misc",
   "experience": 0.35,
   "cookingtime": 200,
+  "group": "eggs",
   "ingredient": {
     "item": "minecraft:egg"
   },

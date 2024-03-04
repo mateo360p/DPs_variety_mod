@@ -22,18 +22,23 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EGG_YAW.get());
                         output.accept(ModItems.BOILED_EGG.get());
                         output.accept(ModItems.FRIED_EGGS.get());
+                        output.accept(ModItems.CHEESE.get());
+                        output.accept(ModItems.COMBINED_ROTTEN_FLESH.get());
+                        output.accept(ModItems.LEMON.get());
+                        output.accept(ModItems.OIL_BOTTLE.get());
                         output.accept(ModItems.LEMON_BOTTLE.get());
                         output.accept(ModBlocks.CARROT_BASKET.get());
                         output.accept(ModBlocks.POTATO_BASKET.get());
                         output.accept(ModBlocks.APPLE_BASKET.get());
                         output.accept(ModBlocks.BEETROOT_BASKET.get());
+                        output.accept(ModBlocks.COOKING_TABLE.get());
                         //DENDERITE STUFF
+                        output.accept(ModItems.DENDERITE_UPGRADE_TEMPLATE.get());
                         output.accept(ModItems.DENDERITE_SCRAP.get());
                         output.accept(ModItems.DENDERITE_INGOT.get());
                         output.accept(ModBlocks.DENDERITE_ORE.get());
                         output.accept(ModBlocks.DENDERITE_SCRAP_BLOCK.get());
                         output.accept(ModBlocks.DENDERITE_BLOCK.get());
-                        output.accept(ModItems.DENDERITE_UPGRADE_TEMPLATE.get());
                         output.accept(ModItems.DENDERITE_SWORD.get());;
                         output.accept(ModItems.DENDERITE_PICKAXE.get());
                         output.accept(ModItems.DENDERITE_AXE.get());

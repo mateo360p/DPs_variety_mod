@@ -3,6 +3,7 @@
   "category": "misc",
   "experience": 0.35,
   "cookingtime": 100,
+  "group": "eggs",
   "ingredient": {
     "item": "dpsvarmod:egg_yolk_and_white"
   },

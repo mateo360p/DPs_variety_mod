@@ -1,0 +1,13 @@
+{
+  "type": "crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dpsvarmod:combined_rotten_flesh"
+    }
+  ],
+  "result": {
+    "item": "minecraft:rotten_flesh",
+    "count": 3
+  }
+}
