@@ -1,6 +1,7 @@
 package com.mateo360p.dpsvarmod.block;
 
-import com.mateo360p.dpsvarmod.block.blocks.OnionBlock;
+import com.mateo360p.dpsvarmod.block.blocks.customCrops.OnionCropBlock;
+import com.mateo360p.dpsvarmod.block.blocks.customCrops.TomatoCropBlock;
 import com.mateo360p.dpsvarmod.block.blocks.customFacingBlock;
 import com.mateo360p.dpsvarmod.dpsvarmod;
 import com.mateo360p.dpsvarmod.item.ModItems;
@@ -29,7 +30,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DENDERITE_ORE;
     public static final RegistryObject<Block> DENDERITE_SCRAP_BLOCK;
     public static final RegistryObject<Block> COOKING_TABLE;
-    public static final RegistryObject<Block>  ONION_CROP;
+    public static final RegistryObject<Block> ONION_CROP;
+    public static final RegistryObject<Block> TOMATO_CROP;
+
 
 //ALL BLOCKS
     static{
@@ -51,7 +54,9 @@ public class ModBlocks {
         COOKING_TABLE = registerBlock("cooking_table",
                 () -> new customFacingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)),new Item.Properties());
         ONION_CROP = BLOCKS.register("onion_crop",
-                () -> new OnionBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+                () -> new OnionCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+        TOMATO_CROP = BLOCKS.register("tomato_crop",
+                () -> new TomatoCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
     }
 
 //Auto register
