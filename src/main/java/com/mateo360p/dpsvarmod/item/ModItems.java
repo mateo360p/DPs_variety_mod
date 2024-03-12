@@ -114,7 +114,7 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.BOILED_EGG));
         });
         LETTUCE = ITEMS.register("lettuce", () -> {
-            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.LETTUCE));
+            return new ItemNameBlockItem(ModBlocks.LETTUCE_CROP.get(), new Item.Properties().stacksTo(64).food(ModFoods.LETTUCE));
         });
         TOMATO = ITEMS.register("tomato", () -> {
             return new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(),new Item.Properties().stacksTo(64).food(ModFoods.TOMATO));

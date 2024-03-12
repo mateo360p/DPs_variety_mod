@@ -1,5 +1,6 @@
 package com.mateo360p.dpsvarmod.block;
 
+import com.mateo360p.dpsvarmod.block.blocks.customCrops.LettuceCropBlock;
 import com.mateo360p.dpsvarmod.block.blocks.customCrops.OnionCropBlock;
 import com.mateo360p.dpsvarmod.block.blocks.customCrops.TomatoCropBlock;
 import com.mateo360p.dpsvarmod.block.blocks.customFacingBlock;
@@ -32,6 +33,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> COOKING_TABLE;
     public static final RegistryObject<Block> ONION_CROP;
     public static final RegistryObject<Block> TOMATO_CROP;
+    public static final RegistryObject<Block> LETTUCE_CROP;
 
 
 //ALL BLOCKS
@@ -57,7 +59,9 @@ public class ModBlocks {
                 () -> new OnionCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
         TOMATO_CROP = BLOCKS.register("tomato_crop",
                 () -> new TomatoCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
-    }
+        LETTUCE_CROP = BLOCKS.register("lettuce_crop",
+                () -> new LettuceCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY)));
+}
 
 //Auto register
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> supplier, Item.Properties properties) {
