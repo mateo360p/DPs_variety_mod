@@ -58,6 +58,8 @@ public class CustomDrinkableItem extends Item {
     public UseAnim getUseAnimation(ItemStack mStack) {
         return UseAnim.DRINK;
     }
+
+    @Override
     public SoundEvent getEatingSound() {
         return this.getDrinkingSound();
     }

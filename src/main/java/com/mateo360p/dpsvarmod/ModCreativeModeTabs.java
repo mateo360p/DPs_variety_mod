@@ -26,7 +26,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COMBINED_ROTTEN_FLESH.get());
                         output.accept(ModItems.LETTUCE.get());
                         output.accept(ModItems.TOMATO.get());
-                        output.accept(ModItems.CORN.get());
                         output.accept(ModItems.ONION.get());
                         output.accept(ModItems.GARLIC.get());
                         output.accept(ModItems.LEMON.get());

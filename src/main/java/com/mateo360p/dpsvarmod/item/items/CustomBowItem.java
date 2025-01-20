@@ -24,6 +24,7 @@ public class CustomBowItem extends BowItem {
         return this.tier;
     }
 
+    @Override
     public AbstractArrow customArrow(AbstractArrow arrow) {
         arrow.setBaseDamage(arrow.getBaseDamage() + (double)this.tier.getAttackDamageBonus());
         return arrow;

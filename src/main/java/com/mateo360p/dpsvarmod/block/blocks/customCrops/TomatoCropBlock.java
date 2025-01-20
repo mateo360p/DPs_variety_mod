@@ -24,8 +24,8 @@ public class TomatoCropBlock extends CropBlock {
     public static final int MAX_AGE = 7;
     public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
 
-    public TomatoCropBlock(Properties pProperties) {
-        super(pProperties);
+    public TomatoCropBlock() {
+        super(customCropBlock.DefBlockProperties);
     }
 
     @Override

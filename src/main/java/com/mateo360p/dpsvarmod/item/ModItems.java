@@ -31,7 +31,6 @@ public class ModItems {
 // Foods
     public static final RegistryObject<Item> LETTUCE;
     public static final RegistryObject<Item> TOMATO;
-    public static final RegistryObject<Item> CORN;
     public static final RegistryObject<Item> FRIED_EGGS;
     public static final RegistryObject<Item> BOILED_EGG;
     public static final RegistryObject<Item> CHEESE;
@@ -118,9 +117,6 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         });
         TOMATO = ITEMS.register("tomato", () -> {
             return new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(),new Item.Properties().stacksTo(64).food(ModFoods.TOMATO));
-        });
-        CORN = ITEMS.register("corn", () -> {
-            return new Item(new Item.Properties().stacksTo(64).food(ModFoods.CORN));
         });
         CHEESE = ITEMS.register("cheese", () -> {
             return new Item(new Item.Properties().stacksTo(64).food(ModFoods.CHEESE));
