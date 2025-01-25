@@ -3,6 +3,7 @@ package com.mateo360p.dpsvarmod.block.blocks.customCrops;
 import java.util.function.Supplier;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -15,21 +16,23 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class customCropBlock extends CropBlock {
-    private final Supplier<? extends ItemLike> seed;
-    public static final int MAX_AGE = 7;
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
+    // -------- Default Crop Vars ------------
     public static final BlockBehaviour.Properties DefBlockProperties = BlockBehaviour.Properties.of()
             .mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY);
+    public static final VoxelShape MAX_SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    public static final int MAX_AGE = 7;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_7;
+    // --------------Code-------------------
+    private final Supplier<? extends ItemLike> seed;
 
     public customCropBlock(Supplier<? extends ItemLike> seed) {
         super(DefBlockProperties);
         this.seed = seed;
     }
-    protected ItemLike itemlike() {
-        return (ItemLike)this.seed.get();
-    }
+
     @Override
     protected ItemLike getBaseSeedId() {
         return this.seed.get();
@@ -50,7 +53,7 @@ public class customCropBlock extends CropBlock {
         pBuilder.add(AGE);
     }
 
-    //Ok i don't know what is this :v
+    //now I get it-
     public static float getGrowthSpeed(Block p_52273_, BlockGetter p_52274_, BlockPos p_52275_) {
         float f = 1.0F;
         BlockPos blockpos = p_52275_.below();

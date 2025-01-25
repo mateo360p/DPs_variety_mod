@@ -29,6 +29,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DENDERITE_SCRAP_BLOCK;
     public static final RegistryObject<Block> COOKING_TABLE;
     public static final RegistryObject<Block> ONION_CROP;
+    public static final RegistryObject<Block> CORN_CROP;
     public static final RegistryObject<Block> TOMATO_CROP;
     public static final RegistryObject<Block> LETTUCE_CROP;
 
@@ -58,7 +59,9 @@ public class ModBlocks {
         LETTUCE_CROP = BLOCKS.register("lettuce_crop",
                 () -> new customCropBlock(ModItems.LETTUCE));
         TOMATO_CROP = BLOCKS.register("tomato_crop",
-                () -> new TomatoCropBlock());
+                TomatoCropBlock::new);
+        CORN_CROP = BLOCKS.register("corn_crop",
+                () -> new doubleCropBlock(ModItems.CORN));
 
     }
 

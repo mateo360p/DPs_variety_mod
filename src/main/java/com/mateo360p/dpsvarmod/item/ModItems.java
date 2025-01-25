@@ -27,6 +27,7 @@ public class ModItems {
     public static final RegistryObject<Item> LEMON;
     public static final RegistryObject<Item> GARLIC;
     public static final RegistryObject<Item> ONION;
+    public static final RegistryObject<Item> CORN;
     
 // Foods
     public static final RegistryObject<Item> LETTUCE;
@@ -92,6 +93,9 @@ public static final RegistryObject<Item> DENDERITE_HELMET;
         });
         ONION = ITEMS.register("onion", () -> {
             return new ItemNameBlockItem(ModBlocks.ONION_CROP.get(),new Item.Properties().stacksTo(64));
+        });
+        CORN = ITEMS.register("corn", () -> {
+            return new ItemNameBlockItem(ModBlocks.CORN_CROP.get(),new Item.Properties().stacksTo(64));
         });
         OIL_BOTTLE = ITEMS.register("vegetable_oil_bottle", () -> {
             return new CustomContainerItem(Items.GLASS_BOTTLE, new Item.Properties().stacksTo(64));
